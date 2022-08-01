@@ -45,12 +45,6 @@ app.get("/getAllFiles", function (req, res) {
       });
   });
 });
-// const folderPath = './Text Folder'
-// app.get('/content', function(req, res) {
-//   fs.readdirSync(folderPath).map(fileName => {
-//     return path.join(folderPath, fileName);
-//   });
-  
-// })
+
 
 app.listen(PORT, () => console.log("App is listening at " + PORT));
