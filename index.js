@@ -2,10 +2,15 @@ const express = require("express");
 const fs = require("fs");
 const app = express();
 const path = require('path');
+require('dotenv').config();
 
-const PORT = 8001;
+const port = process.env.PORT || 8001;
 
 let timeStamp = new Date().toString();
+
+app.get("/", (req, res) =>
+  res.send(`Server Running`)
+);
 
 //API Endpoint to generate current time stamp.
 app.post("/addStamp", (req, res) => {
@@ -53,4 +58,4 @@ app.get("/getAllFiles", function (req, res) {
   
 // })
 
-app.listen(PORT, () => console.log("App is listening at " + PORT));
+app.listen(port, () => console.log("App is listening at " + port));
