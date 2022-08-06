@@ -8,9 +8,14 @@ const port = process.env.PORT || 8001;
 
 let timeStamp = new Date().toString();
 
+let text = {
+  addStamp : "/addStamp",
+  getStamp : "/getStamp",
+  getFiles : "/getAllFiles"
+}
 
 app.get("/", (req, res) =>
-  res.send(`Server Running`)
+  res.send(`${text}`)
 );
 
 
