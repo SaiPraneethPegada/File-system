@@ -7,6 +7,8 @@ const PORT = 8001;
 
 let timeStamp = new Date().toString();
 
+
+
 //API Endpoint to generate current time stamp.
 app.post("/addStamp", (req, res) => {
   let add = fs.writeFile("./Text Folder/current-date-time.txt", `${timeStamp}`, { flag: 'a+' }, (err) => {
@@ -46,5 +48,8 @@ app.get("/getAllFiles", function (req, res) {
   });
 });
 
+app.get("/", (req, res) =>
+  res.send(`Server Running`)
+);
 
 app.listen(PORT, () => console.log("App is listening at " + PORT));
