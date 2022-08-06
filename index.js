@@ -10,7 +10,7 @@ let timeStamp = new Date().toString();
 
 
 app.get("/", (req, res) =>
-  res.send(`API Endpoints: "/addStamp", "/getStamp", "/getAllFiles" `)
+  res.json(`API Endpoints: "/addStamp"- To Add Current TimeStamp, "/getStamp" - To get Added TimeStamps, "/getAllFiles"- To get all Files in a folder`)
 );
 
 
