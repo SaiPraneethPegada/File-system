@@ -15,7 +15,7 @@ let text = {
 }
 
 app.get("/", (req, res) =>
-  res.send(`${text}`)
+  res.json(`${text}`)
 );
 
 
