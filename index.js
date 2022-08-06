@@ -8,9 +8,12 @@ const port = process.env.PORT || 8001;
 
 let timeStamp = new Date().toString();
 
+
 app.get("/", (req, res) =>
   res.send(`Server Running`)
 );
+
+
 
 //API Endpoint to generate current time stamp.
 app.post("/addStamp", (req, res) => {
@@ -50,12 +53,9 @@ app.get("/getAllFiles", function (req, res) {
       });
   });
 });
-// const folderPath = './Text Folder'
-// app.get('/content', function(req, res) {
-//   fs.readdirSync(folderPath).map(fileName => {
-//     return path.join(folderPath, fileName);
-//   });
-  
-// })
+
+app.get("/", (req, res) =>
+  res.send(`Server Running`)
+);
 
 app.listen(port, () => console.log("App is listening at " + port));
