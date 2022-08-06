@@ -54,8 +54,4 @@ app.get("/getAllFiles", function (req, res) {
   });
 });
 
-app.get("/", (req, res) =>
-  res.send(`Server Running`)
-);
-
 app.listen(port, () => console.log("App is listening at " + port));
