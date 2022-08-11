@@ -8,11 +8,9 @@ const port = process.env.PORT || 8001;
 
 let timeStamp = new Date().toString();
 
-
 app.get("/", (req, res) =>
   res.json(`API Endpoints: "/addStamp"- To Add Current TimeStamp, "/getStamp" - To get Added TimeStamps, "/getAllFiles"- To get all Files in a folder`)
 );
-
 
 
 //API Endpoint to generate current time stamp.
