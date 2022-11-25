@@ -1,13 +1,12 @@
-# nodejs-filesystem 
+# Nodejs - FileSystem 
 
-## Deployed URL:
+## [Deployed URL](https://file-system.onrender.com)
 
-https://node-filesystems.herokuapp.com/
+### API End-Points:
+    
+| Method | End point | Description |
+| ---- | ---- | ---- |
+| POST | /addStamp | To Add Current TimeStamp. |
+| GET | /getStamp | will fetch all the Added TimeStamps. |
+| GET | /getAllFiles | will fetch all Files in a folder. |
 
-### API Endpoints:
-
-- "/getStamp" -> To get all the Added TimeStamps.
-
-- "/addStamp" -> To Add Current TimeStamp.
-
-- "/getAllFiles" -> To get all Files in a folder.
